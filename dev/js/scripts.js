@@ -11,11 +11,11 @@ let mainTL = gsap.timeline();
 
 mainTL.add(fadeInTL)
         .add(zoomTL)
-        // .addLabel("marker")
+        .addLabel("marker")
         .add(elevatorTL);  
          
 
 
-        // mainTL.play("marker");
+        mainTL.play("marker");
 
 // GSDevTools.create();
