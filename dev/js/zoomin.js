@@ -10,6 +10,7 @@ gsap.set("#backHillRight",{transformOrigin:"center"});
 gsap.set("#backHillLeft",{transformOrigin:"center"});
 gsap.set("#backMountain",{transformOrigin:"center"});
 
+
 zoomTL.from(".midHill",{duration:5.5, scale:10,ease: "power4.out",y:"+=1000"},"zoom")
         .from(".frontHill",{duration:5.5, scale:10,ease: "power4.out",y:"+=800"},"zoom")
         .from("#midSurface",{duration:5.5, scale:10,ease: "power4.out",y:"+=1500"},"zoom")
@@ -17,3 +18,4 @@ zoomTL.from(".midHill",{duration:5.5, scale:10,ease: "power4.out",y:"+=1000"},"z
         .from("#backHillRight",{duration:5.5, scale:10,ease: "power4.out",y:"+=1800"},"zoom")
         .from("#backHillLeft",{duration:5.5, scale:10,ease: "power4.out",y:"+=1800"},"zoom")
         .from("#backMountain",{duration:5.5, scale:10,ease: "power4.out",y:"+=1800"},"zoom")
+        
