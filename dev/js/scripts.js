@@ -3,12 +3,19 @@ import { GSDevTools } from "gsap/GSDevTools";
 
 import { zoomTL } from "./zoomIn"
 import { fadeInTL } from "./fadeIn"
+import { elevatorTL } from "./elevator"
 
 gsap.registerPlugin(GSDevTools);
 
 let mainTL = gsap.timeline();
 
 mainTL.add(fadeInTL)
-        .add(zoomTL);   
+        .add(zoomTL)
+        // .addLabel("marker")
+        .add(elevatorTL);  
+         
 
-GSDevTools.create();
+
+        // mainTL.play("marker");
+
+// GSDevTools.create();
