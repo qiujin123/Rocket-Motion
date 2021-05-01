@@ -6,6 +6,7 @@ import { fadeInTL } from "./fadeIn"
 import { elevatorTL } from "./elevator"
 import { rocketGoTL } from "./rocketGo"
 import { flightPathTL } from "./flightPath"
+import { moonZoomTL } from "./moonZoom"
 
 gsap.registerPlugin(GSDevTools);
 
@@ -14,12 +15,13 @@ let mainTL = gsap.timeline();
 mainTL.add(fadeInTL)
         .add(zoomTL)
         .add(elevatorTL)
-        // .addLabel("marker")
         .add(rocketGoTL)
-        .add(flightPathTL);   
+        .addLabel("marker")
+        .add(flightPathTL, "zoomFlight")
+        .add(moonZoomTL, "zoomFlight");  
          
 
 
-        // mainTL.play("marker");
+        mainTL.play("marker");
 
 // GSDevTools.create();

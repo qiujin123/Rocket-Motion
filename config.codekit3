@@ -123,6 +123,17 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/dev\/js\/moonZoom.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/moonZoom-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/dev\/js\/rocketGo.js" : {
       "bF" : 0,
       "ft" : 64,
