@@ -7,6 +7,7 @@ import { elevatorTL } from "./elevator"
 import { rocketGoTL } from "./rocketGo"
 import { flightPathTL } from "./flightPath"
 import { moonZoomTL } from "./moonZoom"
+import { landingTL } from "./landing"
 
 gsap.registerPlugin(GSDevTools);
 
@@ -18,7 +19,9 @@ mainTL.add(fadeInTL)
         .add(rocketGoTL)
         .addLabel("marker")
         .add(flightPathTL, "zoomFlight")
-        .add(moonZoomTL, "zoomFlight");  
+        .add(moonZoomTL, "zoomFlight")
+        .add(landingTL);  
+
          
 
 

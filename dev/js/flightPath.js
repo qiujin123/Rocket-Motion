@@ -19,3 +19,6 @@ flightPathTL.to("#rocket", {
     ease: "none",
     scale:1
 });
+
+
+// MotionPathHelper.create("#rocket");
