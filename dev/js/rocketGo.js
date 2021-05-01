@@ -26,10 +26,10 @@ rocketGoTL.to("#rocketDoorLeft",{ duration:2, x:-30}, "doorOpen")
 
 export let flamesTL = gsap.timeline({paused:true});
 
-flamesTL.to("#smallFlameLeft",{duration:0.25, scaleY:.25,yoyo:true, repeat:-1},"flames")
-.to("#largeFlameLeft",{duration:0.15, scaleY:.15,yoyo:true, repeat:-1},"flames")
-.to("#smallFlameRight",{duration:0.25, scaleY:.25,yoyo:true, repeat:-1},"flames")
-.to("#largeFlameRight",{duration:0.15, scaleY:.15,yoyo:true, repeat:-1},"flames")
+flamesTL.to("#smallFlameLeft",{duration:0.25, scaleY:.75,yoyo:true, repeat:-1},"flames")
+.to("#largeFlameLeft",{duration:0.15, scaleY:.45,yoyo:true, repeat:-1},"flames")
+.to("#smallFlameRight",{duration:0.25, scaleY:.75,yoyo:true, repeat:-1},"flames")
+.to("#largeFlameRight",{duration:0.15, scaleY:.45,yoyo:true, repeat:-1},"flames")
 
 function controlFlames(){
     flamesTL.play()
