@@ -16,15 +16,17 @@ let mainTL = gsap.timeline();
 mainTL.add(fadeInTL)
         .add(zoomTL)
         .add(elevatorTL)
+        // .addLabel("marker")
         .add(rocketGoTL)
+        // .addLabel("marker")
         .add(flightPathTL, "zoomFlight")
         .add(moonZoomTL, "zoomFlight")
-        .addLabel("marker")
         .add(landingTL);  
 
          
 
 
-        mainTL.play("marker");
+        // mainTL.play("marker");
+        mainTL.play();
 
 // GSDevTools.create();
