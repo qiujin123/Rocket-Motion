@@ -4,7 +4,7 @@ import {flamesTL} from "./rocketGo"
 gsap.set("#leftHand",{transformOrigin:"center bottom"});
 
 export let landingTL = gsap.timeline();
-landingTL.to("#rocket",{duration:4, y:"+=350"},"landed")
+landingTL.to("#rocket",{duration:4, scale:1.5, y:"+=350"},"landed")
             .to("#smallFlameLeft",{duration:4, scaleY:0, onStart:stopFlames},"landed")
             .to("#smallFlameRight",{duration:4, scaleY:0},"landed")
             .to("#largeFlameLeft",{duration:4, scaleY:0},"landed")

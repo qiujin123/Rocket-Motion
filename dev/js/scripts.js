@@ -9,6 +9,7 @@ import { rocketGoTL } from "./rocketGo"
 import { flightPathTL } from "./flightPath"
 import { moonZoomTL } from "./moonZoom"
 import { landingTL } from "./landing"
+import { dogMoonTL } from "./dogMoon"
 
 gsap.registerPlugin(GSDevTools);
 
@@ -16,19 +17,19 @@ let mainTL = gsap.timeline();
 
 mainTL.add(fadeInTL)
         .add(zoomTL)
-        .addLabel("marker")
         .add(faceChangeTL)
         .add(elevatorTL)
         .add(rocketGoTL)
         // .addLabel("marker")
         .add(flightPathTL, "zoomFlight")
         .add(moonZoomTL, "zoomFlight")
-        .add(landingTL);  
+        .add(landingTL)
+        .add(dogMoonTL);  
 
          
 
 
-        mainTL.play("marker");
-        // mainTL.play();
+        // mainTL.play("marker");
+        mainTL.play();
 
 // GSDevTools.create();
