@@ -3,6 +3,7 @@ import { GSDevTools } from "gsap/GSDevTools";
 
 import { zoomTL } from "./zoomIn"
 import { fadeInTL } from "./fadeIn"
+import { faceChangeTL } from "./faceChange"
 import { elevatorTL } from "./elevator"
 import { rocketGoTL } from "./rocketGo"
 import { flightPathTL } from "./flightPath"
@@ -15,8 +16,9 @@ let mainTL = gsap.timeline();
 
 mainTL.add(fadeInTL)
         .add(zoomTL)
+        .addLabel("marker")
+        .add(faceChangeTL)
         .add(elevatorTL)
-        // .addLabel("marker")
         .add(rocketGoTL)
         // .addLabel("marker")
         .add(flightPathTL, "zoomFlight")
@@ -26,7 +28,7 @@ mainTL.add(fadeInTL)
          
 
 
-        // mainTL.play("marker");
-        mainTL.play();
+        mainTL.play("marker");
+        // mainTL.play();
 
 // GSDevTools.create();
