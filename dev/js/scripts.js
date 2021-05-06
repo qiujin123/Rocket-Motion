@@ -20,16 +20,11 @@ mainTL.add(fadeInTL)
         .add(faceChangeTL)
         .add(elevatorTL)
         .add(rocketGoTL)
-        // .addLabel("marker")
         .add(flightPathTL, "zoomFlight")
         .add(moonZoomTL, "zoomFlight")
         .add(landingTL)
         .add(dogMoonTL);  
 
-         
-
-
-        // mainTL.play("marker");
         mainTL.play();
 
 // GSDevTools.create();
